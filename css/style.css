@@ -1,0 +1,39 @@
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1024px;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+header img {
+    height: 36px;
+    object-fit: cover;
+}
+
+/* Paris , Belleville */
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    margin-top: 15px;
+    color:#353535;
+}
+
+.location i {
+    height: 16px;
+    padding-right: 20px;
+}
+
+.location p {
+    font-weight: bold;
+}
+

@@ -3,18 +3,24 @@ body {
     max-width: 1024px;
     height: 100vh;
     margin: 0;
+    color: black;
+    background-color: #EAEAEA
 }
 
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 25px;
+    height: 70px;
+    margin-top: 0;
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.30);
+    background-color: white;
 }
 
 header img {
     height: 36px;
-    object-fit: cover;
+    padding-top: 14px;
 }
 
 /* Paris , Belleville */
@@ -23,8 +29,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAEAEA;
-    margin-top: 15px;
+    height: 50px;
     color:#353535;
 }
 
@@ -37,3 +42,47 @@ header img {
     font-weight: bold;
 }
 
+/* Explorer nos restaurants */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.title-explore {
+    text-align: center;
+    margin: 10px;
+}
+
+.bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #353535;
+}
+
+/* Bouton explore */
+
+.button-explore {
+    border-radius: 2rem;
+    color: white;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 10px darkgray;
+    transition: 100ms;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-explore label:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px #ff79da;
+    transition: 0.5s;
+}

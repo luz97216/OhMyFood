@@ -87,7 +87,7 @@ nav .button-explore:hover {
     transform: scale(1.02);
     box-shadow: 0 3px 10px rgb(109, 109, 109);
     background: linear-gradient(#fe93e0, #9e6cda);
-    transition: 0.5s;
+    transition: -0.5s;
     cursor: pointer;
 }
 
@@ -147,7 +147,7 @@ nav .button-explore:hover {
 .functioning ol li:hover {
     cursor: pointer;
     transform: scale(1.02);
-    transition: 0.5s;
+    transition: -0.5s;
     box-shadow: 0 8px 12px #00000026;
 }
 
@@ -169,12 +169,19 @@ nav .button-explore:hover {
 .restaurants .card {
     cursor: pointer;
     position: relative;
-    height: 251px;
+    height: 258px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 3px 8px #0000001A;
-    width: 92%;
+    width: 93%;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.restaurants .card:hover {
+    transform: scale(1.02);
+    transition: -0.5s;
+    box-shadow: 0 8px 12px #00000026;
 }
 
 .restaurants .card img {
@@ -188,6 +195,111 @@ nav .button-explore:hover {
     object-position: bottom;
 }
 
-.restaurants .card .card-content {
-
+.card a {
+    text-decoration: none;
+    color: black;
 }
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card-content .card-txt {
+    padding: 10px 0 0 12px;
+}
+
+.card-txt h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-txt p {
+    font-size: 1rem;
+    padding-top: 3px;
+    margin: 0;
+}
+
+/* Heart */
+
+.card-content .heart {
+    padding-right: 20px;
+}
+
+.card-content .heart .fa-solid {
+    display: none;
+    color: linear-gradient(#fe93e0, #9e6cda);
+}
+
+.card-content .heart:hover .fa-regular{
+    display: none;
+}
+
+.card-content .heart:hover .fa-solid{
+    display: inline;
+    cursor: pointer;
+    opacity: 0;
+    color: linear-gradient(#fe93e0, #9e6cda);
+    animation: effet-opacity 1.5s ease;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-content .heart i {
+    height: 2px;
+}
+
+/* nouveau */
+
+.restaurants span {
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #008766;
+    border: solid 6px #99E2D0;
+    border-right-width: 11px;
+    border-left-width: 11px;
+    background: #99E2D0;
+    border-radius: 2px;
+}
+
+/* Footer */
+
+footer {
+    background: #353535;
+    color: white;
+    padding: 16px 0 16px 10px;
+}
+
+.footer-logo img {
+    filter: invert(100%);
+    width: 137px;
+    height: 27px;
+    padding: 16px 0 0 24px;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding: 8px 0 0 26px;
+}
+
+.footer-ul li {
+    padding-bottom: 7px;
+}
+
+.footer-ul .fa-solid {
+    padding-right: 12px;
+}
+
+.footer-ul .fa-handshake-angle {
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+

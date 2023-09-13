@@ -4,7 +4,7 @@ body {
     height: 100vh;
     margin: 0;
     color: black;
-    background-color: #EAEAEA
+    background-color: #EAEAEA;
 }
 
 header {
@@ -78,7 +78,7 @@ nav {
     padding: 17px 20px;
     margin-bottom: 48px;
     box-shadow: 0 3px 10px darkgray;
-    transition: 100ms;
+    transition: 700ms;
     border-style: none;
     text-decoration: none;
 }
@@ -158,11 +158,18 @@ nav .button-explore:hover {
 /* Section Restaurants */
 
 .restaurants {
+    background: #F6F6F6;
+    padding-bottom: 64px;
+}
+
+.restaurants .bold-title {
+    padding: 55px 0 23px 20px
+}
+
+.restaurants-card {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #F6F6F6;
-    padding-bottom: 64px;
     gap: 32px;
 }
 
@@ -238,19 +245,14 @@ nav .button-explore:hover {
     display: none;
 }
 
-.card-content .heart:hover .fa-solid{
+.card-content .heart:hover .fa-solid {
     display: inline;
     cursor: pointer;
-    opacity: 0;
-    color: linear-gradient(#fe93e0, #9e6cda);
+    color: linear-gradient(#9356dc 20%, #ff79da 100%);
     animation: effet-opacity 1.5s ease;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.card-content .heart i {
-    height: 2px;
 }
 
 /* nouveau */
@@ -300,6 +302,83 @@ footer {
 .footer-ul .fa-handshake-angle {
     font-size: 13px;
     padding-right: 10px;
+}
+
+
+@media screen and (min-width:801px) and (max-width:2840px){
+
+    body {
+        max-width: 1440px;
+    }
+
+    header img {
+        padding-top: 0;
+    }
+
+    .bold {
+        font-size: 3rem;
+        margin: 15px 0 22px 0;
+    }
+    .button-explore {
+        margin-bottom: 30px;
+    }
+    
+    .functioning {
+        flex-direction: column;
+        display: flex;
+        padding: 0 150px 0 150px;
+    }
+
+    .functioning ol {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 94%;
+        margin: 0;
+    }
+
+    .functioning ol li {
+        width: 30%;
+    }
+
+    .restaurants {
+        padding: 26px 150px 30px 150px;
+   
+    }
+
+    .restaurants .bold-title {
+        padding: 0 0 25px 17px;
+    }
+
+    .restaurants-card {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 35px;
+    }
+
+    .restaurants .card {
+        width: 45%;
+    }
+
+
+    /* Footer */
+
+    footer {
+        display: flex;  
+        flex-direction: row-reverse;
+        padding: 40px 25px 15px 25px;
+        gap: 30px;        
+    }
+    
+    .footer-logo img {
+        margin-right: 60px
+    }
+    
+    .footer-ul {
+        align-items: center;
+        display: flex;
+        gap: 30px
+    }
 }
 
 

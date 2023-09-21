@@ -242,12 +242,16 @@ nav .button-explore:hover {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    opacity: 0;
 }
 
-.card-content .heart:hover .fa-regular{
+.heart:hover >.fa-solid {
+    display: block;
+}
+
+.heart:hover >.fa-regular {
     display: none;
 }
+
 
 /* nouveau */
 
@@ -298,12 +302,9 @@ footer {
     padding-right: 10px;
 }
 
+    /* Media querie desktop */
 
 @media screen and (min-width:900px) {
-
-    body {
-        max-width: 1440px;
-    }
 
     header img {
         padding-top: 0;

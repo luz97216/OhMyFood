@@ -1,0 +1,40 @@
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+    color: black;
+    background-color: #F6F6F6;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    margin-top: 0;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 36px;
+    padding-top: 21px;
+}
+
+.arrow {
+    position: relative;
+    left: 20px;
+    bottom: 30px
+}
+
+.fa-arrow-left {
+   color: #353535; 
+   font-size: 1rem;
+}
+
+.img-restau img {
+    height: 275px;
+}
+

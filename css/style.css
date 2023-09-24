@@ -227,8 +227,9 @@ nav .button-explore:hover {
 
 /* Heart */
 
-.card-content .heart {
+ .heart {
     padding-right: 20px;
+    font-size: 20px;
 }
 
 .card-content .heart .fa-solid {

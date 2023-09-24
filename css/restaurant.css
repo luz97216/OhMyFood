@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
+
 body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
@@ -34,7 +36,65 @@ header img {
    font-size: 1rem;
 }
 
-.img-restau img {
-    height: 275px;
+/* Image + titre avec coeur */
+
+main {
+    background-color: #F6F6F6; 
 }
+
+.img-restau img {
+    width: 100%;
+    object-fit: cover;
+    height: 232px;
+}
+
+/* Titre du restaurant */
+
+.titre-restau {
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    top: -50px;
+    background-color: #F6F6F6;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.titre-restau h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.5rem;
+    margin: 31px 0 36px 0;
+}
+
+/* Heart */
+
+.heart {
+    font-size: 20px;
+}
+
+.titre-restau .heart .fa-solid {
+    display: none;
+}
+
+.titre-restau .heart:hover .fa-solid {
+    cursor: pointer;
+    animation: effet-opacity 1.5s ease;
+    background: linear-gradient(#9356dc 20%, #ff79da 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heart:hover >.fa-solid {
+    display: block;
+}
+
+.heart:hover >.fa-regular {
+    display: none;
+}
+
+
 

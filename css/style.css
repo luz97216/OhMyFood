@@ -272,16 +272,20 @@ nav .button-explore:hover {
 
 /* Footer */
 
+/* Footer */
+
 footer {
+    display: flex;
+    flex-direction: column;
     background: #353535;
     color: white;
-    padding: 16px 0 16px 10px;
+    margin: 0;
 }
 
 .footer-logo img {
     filter: invert(100%);
     width: 137px;
-    height: 27px;
+    height: 24px;
     padding: 16px 0 0 24px;
 }
 
@@ -302,6 +306,7 @@ footer {
     font-size: 13px;
     padding-right: 10px;
 }
+
 
     /* Media querie desktop */
 

@@ -136,3 +136,40 @@ section h2 {
 .prix {
     font-weight: bold;
 }
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #353535;
+    color: white;
+    margin: 0;
+}
+
+.footer-logo img {
+    filter: invert(100%);
+    width: 137px;
+    height: 24px;
+    padding: 16px 0 0 24px;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding: 8px 0 0 26px;
+}
+
+.footer-ul li {
+    padding-bottom: 7px;
+}
+
+.footer-ul .fa-solid {
+    padding-right: 12px;
+}
+
+.footer-ul .fa-handshake-angle {
+    font-size: 13px;
+    padding-right: 10px;
+}

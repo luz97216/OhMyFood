@@ -116,6 +116,12 @@ article {
     box-shadow: 0 2px 5px #0000001A;
 }
 
+article:hover {
+    transform: scale(1.02);
+    transition: 0s;
+    box-shadow: 0px 2px 10px #00000026;
+}
+
 section h2 {
     font-weight: 100;
     font-size: 1rem;
@@ -133,8 +139,53 @@ section h2 {
     padding-left: 15px;    
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 55px); 
+}
+
+.description h3 {
+    margin: 15px 0 0 5px ;
+}
+
+.description p {
+    margin: 5px 0 15px 5px;
+}
+
 .prix {
     font-weight: bold;
+    position: relative;
+    bottom: -27px;
+    color: #353535;
+}
+
+.select-choice {
+    display: none;
+}
+
+article:hover .select-choice {
+    display: flex;
+   justify-content: center;
+   background-color: #99E2D0;
+   color: white;
+   font-weight: bold;
+   font-size: 1.3rem;
+   align-items: center;
+   border-radius: 0 1rem 1rem 0;
+   width: 70px;
+   margin: 0;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+article:hover .prix {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+article:hover {
+    cursor: pointer;
 }
 
 

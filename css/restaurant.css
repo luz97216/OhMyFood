@@ -110,7 +110,7 @@ section {
 article {
     display: flex;
     background-color: white;
-    width: 97%;
+    width: 96%;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 2px 5px #0000001A;
@@ -144,6 +144,12 @@ section h2 {
     white-space: nowrap;
     text-overflow: ellipsis;
     justify-content: space-between;
+}
+
+.decription:hover {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .description h3 {
@@ -180,10 +186,14 @@ article:hover .select-choice {
    cursor: pointer;
 }
 
-/*article:hover .prix {
+article:hover .select-choice i {
+    animation: spin 1s;
+}
+
+article:hover .prix {
     padding-right: 10px;
     padding-left: 10px;
-}*/
+}
 
 article:hover {
     cursor: pointer;

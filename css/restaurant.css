@@ -6,6 +6,7 @@ body {
     margin: 0;
     color: black;
     background-color: #F6F6F6;
+    width: 100%;
 }
 
 header {
@@ -27,7 +28,7 @@ header img {
 
 .arrow {
     position: relative;
-    left: 20px;
+    padding-left: 20px;
     bottom: 30px
 }
 
@@ -140,6 +141,9 @@ section h2 {
     display: flex;
     flex-direction: column;
     width: calc(100% - 55px); 
+}
+
+.description h3, .description p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -172,7 +176,7 @@ section h2 {
 }
 
 article:hover .select-choice {
-    display: flex;
+   display: flex;
    justify-content: center;
    background-color: #99E2D0;
    color: white;
@@ -255,6 +259,12 @@ footer {
 
 .footer-ul li {
     padding-bottom: 7px;
+    text-decoration: none;
+}
+
+.footer-ul a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-ul .fa-solid {
@@ -264,4 +274,57 @@ footer {
 .footer-ul .fa-handshake-angle {
     font-size: 13px;
     padding-right: 10px;
+}
+
+/* Media querie */
+
+@media screen and (min-width:900px) {
+    body {
+        background-color: white;
+    }
+
+    main {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4px;
+    }
+
+    .titre-restau {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titre-restau h1 {
+        padding-right: 31px;
+    }
+
+    .heart {
+        margin-top: 0px;
+    }
+
+    section {
+        width: 73%;
+        margin: 0 auto 0 auto;
+    }
+
+        /* Footer */
+
+    footer {
+        display: flex;  
+        flex-direction: row-reverse;
+        padding: 40px 25px 15px 25px;
+        gap: 30px;        
+    }
+    
+    .footer-logo img {
+        margin-right: 60px
+    }
+    
+    .footer-ul {
+        align-items: center;
+        display: flex;
+        gap: 30px
+    }
+
 }
